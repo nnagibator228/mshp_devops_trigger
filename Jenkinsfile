@@ -9,7 +9,6 @@ pipeline {
                 script {
                     git credentialsId: "tghub_token1", url: "https://github.com/nnagibator228/mshp_devops_trigger"
                     sh 'ls -la'
-                    sh "checkout ${env.BRANCH_NAME}"
                 }
             }
         }
